@@ -1,6 +1,6 @@
 JBoss JDG_MR Demo Guide
 ============================================================
-Demo based on JBoss DataGrid and EAP products.
+Demo based on JBoss DataGrid and EAP products that show how to create a distributed big data processing application using JBoss DataGrid's MapReduce implementation.
 
 Setup and Configuration
 -----------------------

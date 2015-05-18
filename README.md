@@ -19,9 +19,3 @@ run 'init.sh' and follow the instructions given.
 
 4) If you want to add new nodes later, you can run "addNode.sh --nodeNumber=n" where "n" is the node number.
 
-Released versions
------------------
-See the tagged releases for the following versions of the product:
-
-JBoss DataGrid 6.4
-EAP 6.4

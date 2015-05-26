@@ -124,6 +124,7 @@ app.controller('formCtrl', function($scope,$http,FileUploader) {
     	getClusterStats($scope,$http);	
   		});
 	$("#fileUploadModal").on('show.bs.modal',function(){
+		document.getElementById('fup').value='';
 		$scope.uploader.clearQueue();
 		$scope.uploader.progress=0;
 		});
@@ -133,5 +134,7 @@ app.controller('formCtrl', function($scope,$http,FileUploader) {
 	});
 
 	$scope.uploader= new FileUploader({url:'rest/billing/CDRUpload',alias:'cdrFile'});
-
+	
+	$scope.uploader.onSuccessItem= function(fileItem, response, status, headers){$('#fileUploadModal').modal('hide')};
+	
 });

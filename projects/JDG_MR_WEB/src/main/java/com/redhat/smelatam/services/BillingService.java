@@ -62,8 +62,6 @@ public class BillingService {
 	public String getClusterStats(){
 		EmbeddedCacheManager ecm = reqCache.getCacheManager();
 		
-		List<Address> addresses = reqCache.getRpcManager().getTransport().getPhysicalAddresses();
-		
 		String cluster = ecm.getClusterName();
 		List<Address> members = ecm.getMembers();
 		String membersArr = "";

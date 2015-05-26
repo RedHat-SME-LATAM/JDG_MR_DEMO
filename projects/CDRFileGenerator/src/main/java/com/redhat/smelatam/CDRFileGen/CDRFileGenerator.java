@@ -14,10 +14,12 @@ public class CDRFileGenerator {
 	
 
 	public static void main(String[] args) {
-			int recordCount = Integer.valueOf(args[0]);
+			
+		int recordCount = Integer.valueOf(args[0]);
+
 			FileWriter cdrFile=null;
 			try {
-				cdrFile = new FileWriter("CDRFile.txt");
+				cdrFile = new FileWriter("CDRFile" + recordCount + ".txt");
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
